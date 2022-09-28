@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link rel="stylesheet" href="quickdots.css">
+    <script src="https://kit.fontawesome.com/aaaede2f8f.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+
+     <video autoplay loop muted plays-inline class="back-video">
+        <source src="background.mp4" type="video/mp4">
+     </video>
+
+    <!-- <video autoplay="" playsinline="" muted="" loop="">
+        <source src="background.mp4" type="video/mp4"> -->
+       
+
+    <div class="navigation">
+     <span style="--i:0;--x:-1;--y:0"><i class="fa-solid fa-music" onclick="window.location.href='Music.html'"></i></span>
+     <span style="--i:1;--x:1;--y:0"><i class="fa-brands fa-youtube" onclick="window.location.href='https://www.youtube.com/account'"></i></span>
+     <span style="--i:2;--x:0;--y:-1"><i class="fa-solid fa-video" onclick="window.location.href='Movies.html'"></i></span>
+     <span style="--i:3;--x:0;--y:1"><i class="fa-brands fa-github" onclick="window.location.href='https://github.com/AtulSomkuwar'"></i></span>
+     <span style="--i:4;--x:1;--y:1"><i class="fa-brands fa-google" onclick="window.location.href='https://www.google.com/search'"></i></span>
+
+     <span style="--i:5;--x:-1;--y:-1"><i class="fa-brands fa-facebook" onclick="window.location.href='https://www.facebook.com/'"></i></span>
+
+     <span style="--i:6;--x:0;--y:0"><i class="fa-brands fa-twitter" onclick="window.location.href='https://twitter.com/login'"></i></span>
+
+     <span style="--i:7;--x:-1;--y:1"><i class="fa-brands fa-instagram" onclick="window.location.href='https://www.instagram.com/accounts/login/'"></i></span>
+
+     <span style="--i:8;--x:1;--y:-1"><i class="fa-solid fa-n" onclick="window.location.href='https://www.netflix.com/'"></i></span>
+    </div>
+    
+</body>
+<script>
+    // Navigation
+    let navigation = document.querySelector('.navigation');
+    navigation.onclick = function(){
+        navigation.classList.toggle('active');
+    }
+</script>
+</html>

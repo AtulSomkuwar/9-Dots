@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+   
+   
+}
+body video{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    background-size:cover;
+    width: 100%;
+    height: 100% 100%;
+   
+    overflow: visible;
+    position: absolute;
+    
+}
+
+.navigation{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border-radius: 15px;
+    border: 2px solid  orange ;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-delay: 0.8s;
+  
+}
+.navigation.active{
+    width: 500px;
+    height:500px; 
+    transition-delay: 0s; 
+}
+.navigation span{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+   
+    border: 10px solid white;
+    border-radius: 50%;
+    transform: translate(calc(15px * var(--x)),calc(15px * var(--y)));
+    transition: transform 0.5s,width 0.5s,height 0.5s;
+    transition-delay:calc(0.1s * var(--i));
+}
+.navigation.active span{
+    width: 100px;
+    height: 100px;
+   
+    transform: translate(calc(150px * var(--x)),calc(150px * var(--y)));
+}
+.navigation.active span i{
+ font-size: 50px;
+
+}
+.navigation.active span .fa-music{
+    color:violet;
+    
+} 
+.navigation.active span .fa-music:hover{
+  color: rgb(63 255 0);
+}
+.navigation.active span .fa-youtube{
+    color: red;
+}
+.navigation.active span .fa-youtube:hover{
+    color: rgb(63 255 0);
+}
+.navigation.active span .fa-video{
+    color:orange;
+} 
+.navigation.active span .fa-video:hover{
+    color: rgb(63 255 0);
+}
+.navigation.active span .fa-github{
+    color:black;
+} 
+.navigation.active span .fa-github:hover{
+    color: rgb(63 255 0);
+}
+.navigation.active span .fa-google{
+    color:rgb(66 133 244);
+}
+.navigation.active span .fa-google:hover{
+    color: rgb(63 255 0);
+}
+
+.navigation.active span .fa-facebook{
+    color:#0f8ff2;
+} 
+.navigation.active span .fa-facebook:hover{
+    color: rgb(63 255 0);
+}
+.navigation.active span .fa-twitter{
+    color:rgb(28 150 232);
+} 
+.navigation.active span .fa-twitter:hover{
+    color: rgb(63 255 0);
+}
+.navigation.active span .fa-instagram{
+    color:#da1c49;
+} 
+.navigation.active span .fa-instagram:hover{
+    color: rgb(63 255 0);
+}
+.navigation.active span .fa-facebook{
+    color:#0f8ff2;
+} 
+.navigation.active span .fa-facebook:hover{
+    color: rgb(63 255 0);
+}
+.navigation.active span .fa-n{
+    color:rgb(193 7 30);
+} 
+.navigation.active span .fa-n:hover{
+    color: rgb(63 255 0);
+}
+
+.back-video {
+  
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+@media screen and (max-width:800px){
+
+
+    body{
+        width: 100%;
+    }
+    .navigation{
+        width: 100px;
+        height: 100px;
+    }
+    .navigation.active{
+         max-width: 350px;
+         max-height: 350px;
+        transition-delay: 0s; 
+    }
+    .navigation span{
+        transform: translate(calc(15px * var(--x)),calc(15px * var(--y)));
+    }
+    .navigation.active span{
+        width: 20%;
+        height: 20%;
+       
+        transform: translate(calc(150px * var(--x)),calc(150px * var(--y)));
+    }
+    .navigation.active span{
+        width: 80px;
+        height: 80px;
+       
+        transform: translate(calc(100px * var(--x)),calc(100px * var(--y)));
+    }
+    .navigation.active span i{
+     font-size: 40px;
+    
+    }
+}
+
+@media screen and (max-width:710px){
+    body{
+        width: 100%;
+    }
+    .navigation{
+        width: 100px;
+        height: 100px;
+    }
+    .navigation.active{
+         max-width: 300px;
+         max-height: 300px;
+        transition-delay: 0s; 
+    }
+    .navigation span{
+        transform: translate(calc(15px * var(--x)),calc(15px * var(--y)));
+    }
+    .navigation.active span{
+        /* width: 20%;
+        height: 20%; */
+       
+        transform: translate(calc(150px * var(--x)),calc(150px * var(--y)));
+    }
+    .navigation.active span{
+        width: 70px;
+        height: 70px;
+       
+        transform: translate(calc(90px * var(--x)),calc(90px * var(--y)));
+    }
+    .navigation.active span i{
+     font-size: 35px;
+    
+    }
+}
+
+@media screen and (max-width:560px){
+    body{
+        width: 100%;
+    }
+    .navigation{
+        width: 100px;
+        height: 100px;
+    }
+    .navigation.active{
+         max-width: 250px;
+         max-height: 250px;
+        transition-delay: 0s; 
+    }
+    .navigation span{
+        transform: translate(calc(15px * var(--x)),calc(15px * var(--y)));
+    }
+    .navigation.active span{
+        /* width: 20%;
+        height: 20%; */
+       
+        transform: translate(calc(150px * var(--x)),calc(150px * var(--y)));
+    }
+    .navigation.active span{
+        width: 60px;
+        height: 60px;
+       
+        transform: translate(calc(80px * var(--x)),calc(80px * var(--y)));
+    }
+    .navigation.active span i{
+     font-size: 30px;
+    
+    }
+}
+
+@media screen and (max-width:460px){
+    body{
+        width: 100%;
+    }
+    .navigation{
+        width: 100px;
+        height: 100px;
+    }
+    .navigation.active{
+         max-width: 200px;
+         max-height: 200px;
+        transition-delay: 0s; 
+    }
+    .navigation span{
+       
+        transform: translate(calc(15px * var(--x)),calc(15px * var(--y)));
+    }
+    .navigation.active span{
+        /* width: 20%;
+        height: 20%; */
+       
+        transform: translate(calc(150px * var(--x)),calc(150px * var(--y)));
+    }
+    .navigation.active span{
+        width: 50px;
+        height: 50px;
+        border: 8px solid white;
+        transform: translate(calc(60px * var(--x)),calc(60px * var(--y)));
+    }
+    .navigation.active span i{
+     font-size: 25px;
+    
+    }
+}
+
+@media screen and (max-width:375px){
+    body{
+        width: 100%;
+    }
+    .navigation{
+        width: 100px;
+        height: 100px;
+    }
+    .navigation.active{
+         max-width: 150px;
+         max-height: 150px;
+        transition-delay: 0s; 
+    }
+    .navigation span{
+       
+        transform: translate(calc(15px * var(--x)),calc(15px * var(--y)));
+    }
+    .navigation.active span{
+        /* width: 20%;
+        height: 20%; */
+       
+        transform: translate(calc(150px * var(--x)),calc(150px * var(--y)));
+    }
+    .navigation.active span{
+        width: 40px;
+        height: 40px;
+        border: 7px solid white;
+        transform: translate(calc(50px * var(--x)),calc(50px * var(--y)));
+    }
+    .navigation.active span i{
+     font-size: 20px;
+    
+    }
+}
+
+@media screen and (max-width:285px){
+    body{
+        width: 100%;
+    }
+    .navigation{
+        width: 60px;
+        height: 60px;
+    }
+    .navigation.active{
+         max-width: 100px;
+         max-height: 100px;
+        transition-delay: 0s; 
+    }
+    .navigation span{
+        /* max-width: 5px;
+        max-width: 5px; */
+        transform: translate(calc(10px * var(--x)),calc(10px * var(--y)));
+    }
+    .navigation.active span{
+       
+        transform: translate(calc(150px * var(--x)),calc(150px * var(--y)));
+    }
+    .navigation.active span{
+        width: 27px;
+        height: 27px;
+        border: 4px solid white;
+        transform: translate(calc(30px * var(--x)),calc(30px * var(--y)));
+    }
+    .navigation.active span i{
+     font-size: 10px;
+    
+    }
+}
+
+
